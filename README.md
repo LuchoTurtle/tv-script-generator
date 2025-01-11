@@ -12,7 +12,7 @@ This project was made as part of the Deep Learning course from Udacity and is pa
 
 This notebook uses data from the scripts throughout the 9 seasons of Seinfeld. This data is used to generate a random TV script through a prime word and continuously generate words until a limit that is set by the user. We are using an RNN for this.
 
-The reason for using an embedding layer before the LSTM layers is because of how inefficient one-hot encoding words can be, since most of the values will be set to zero through matrix multiplication. To solve this problem, **embeddings** is used, which is essentially a fully connected layer that, instead of doing matrix multiplication, uses its weight matrix as a lookup table. Therefore, the lookup is just a shortcut for matrix multiplication and skips many unnecessary calculations.
+The reason for using an embedding layer before the LSTM layers is because of how inefficient one-hot encoding words can be, since most of the values will be set to zero through matrix multiplication. To solve this problem, **embeddings** is a fully connected layer that uses its weight matrix as a lookup table instead of doing matrix multiplication. Therefore, the lookup is just a shortcut for matrix multiplication and skips many unnecessary calculations.
 
 ![Model][model]
 
